@@ -25,7 +25,7 @@ export const MenuItems =[
         icon: "faAddressBook"
     },
     {
-        title: "SignUp",
+        title: "Login",
         url:"/signup",
         cName:"na-menu",
         icon: "faUserPlus"
