@@ -1,0 +1,39 @@
+
+.navbarItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 35px;
+    height: 50px; /* You can adjust the height as needed */
+    width: 95%;
+    border: 2px solid red;
+    border-radius: 20px; /* You can adjust the border radius as needed */
+    background-color: #f0f0f0; /* Set the background color of the navbar */
+  }
+  
+  .navbar-logo {
+    padding-left: 10px; /* Add some padding to the left of the logo */
+    font-size: 24px; /* You can adjust the font size as needed */
+    font-weight: bold; /* You can adjust the font weight as needed */
+  }
+  
+  .na-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Add some margin to the right of the menu items */
+  }
+  
+  .na-menu li {
+    margin-right: 20px; /* Add some margin between menu items */
+    font-size: 16px; /* You can adjust the font size as needed */
+  }
+  
+  /* Styles for the icons */
+  .icon {
+    margin-right: 5px; 
+    /* color: #ff0000;  */
+  }
+  
+  
