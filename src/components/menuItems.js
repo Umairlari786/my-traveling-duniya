@@ -1,33 +1,27 @@
-import { faHome , faBan ,faBriefcase , faAddressBook , faUserPlus} from "@fortawesome/free-solid-svg-icons";
+
 export const MenuItems =[
     {
         title: "Home",
         url:"/",
         cName:"na-menu",
-        icon: "faHome"
+        icon: "fa-solid fa-house"
     },
     {
         title: "About",
         url:"/about",
         cName:"na-menu",
-        icon: "faBan"
+        icon: "fa-solid fa-ban"
     },
     {
         title: "Service",
         url:"/service",
         cName:"na-menu",
-        icon: "faBriefcase"
+        icon: "fa-solid fa-briefcase"
     },
     {
         title: "Contact",
         url:"/contact",
         cName:"na-menu",
-        icon: "faAddressBook"
-    },
-    {
-        title: "SignUp",
-        url:"/signup",
-        cName:"na-menu",
-        icon: "faUserPlus"
+        icon: "fa-solid fa-address-book"
     }
 ]

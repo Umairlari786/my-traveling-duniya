@@ -1,7 +1,7 @@
 import React from "react";
 import "./navbar.css";
 import { MenuItems } from "./menuItems";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 //import { faHome , faBan ,faBriefcase , faAddressBook , faUserPlus} from "@fortawesome/free-solid-svg-icons";
 
 class Navbar extends React.Component {
@@ -13,14 +13,14 @@ class Navbar extends React.Component {
             { MenuItems.map((item,index)=>{
                 return(
                     <li key={index}>
-                        <a href="/">
-                        <FontAwesomeIcon  className={item.icon} />
+                        <a href={item.url}>
+                        <i  className={item.icon} />
                         {item.title}
                         </a>
                     </li>
                 )
             })}
-    
+              <button>SignUp</button>
         </ul>
       </nav>
     );

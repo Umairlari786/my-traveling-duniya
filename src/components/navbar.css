@@ -3,12 +3,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 30px;
     margin-top: 40px;
     margin-left: 35px;
-    height: 50px; /* You can adjust the height as needed */
-    width: 95%;
-    border: 2px solid red;
-    border-radius: 20px; /* You can adjust the border radius as needed */
+    height: 88px; /* You can adjust the height as needed */
+    width: 90%;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+    border: 2px solid rgba(95, 86, 86, 0.137);
+    border-radius: 13px; /* You can adjust the border radius as needed */
     background-color: #f0f0f0; /* Set the background color of the navbar */
   }
   
@@ -35,5 +37,25 @@
     margin-right: 5px; 
     /* color: #ff0000;  */
   }
+
+.na-menu i{
+    padding-right: 10px;
+  }
+
+button{
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.2rem ease-in-out;
+}
+
+button:hover{
+  background-color: rgb(169, 154, 136);
+  color: black;
+}
   
   
