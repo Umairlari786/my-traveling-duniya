@@ -5,15 +5,27 @@ import { MenuItems } from "./menuItems";
 //import { faHome , faBan ,faBriefcase , faAddressBook , faUserPlus} from "@fortawesome/free-solid-svg-icons";
 
 class Navbar extends React.Component {
+  state = {clicked:false};
+  handledClick = ()=>{
+    this.setState({clicked:!this.state.clicked})
+  }
   render() {
     return (
       <nav className="navbarItems">
         <h1 className="navbar-logo">TripOnWeekend</h1>
-        <ul className="na-menu">
+        
+        <div className="menu-icon" onClick=
+        {this.handledClick}>
+         <i className={this.state.clicked ? "fas fa-times": "fas fa-bars"}></i>
+        </div>
+
+        
+        <ul className={this.state.clicked ?
+        "na-menu active" :"na-menu"}>
             { MenuItems.map((item,index)=>{
                 return(
                     <li key={index}>
-                        <a href={item.url}>
+                        <a className={item.cName} href={item.url}>
                         <i  className={item.icon} />
                         {item.title}
                         </a>

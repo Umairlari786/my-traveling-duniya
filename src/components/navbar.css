@@ -7,11 +7,16 @@
     margin-top: 40px;
     margin-left: 35px;
     height: 88px; /* You can adjust the height as needed */
-    width: 90%;
+    width: 85%;
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
     border: 2px solid rgba(95, 86, 86, 0.137);
     border-radius: 13px; /* You can adjust the border radius as needed */
     background-color: #f0f0f0; /* Set the background color of the navbar */
+    position: fixed;
+    top: 20px;
+    right: 50%;
+    transform: translate(50%);
+    z-index: 9999;
   }
   
   .navbar-logo {
@@ -23,6 +28,7 @@
   .na-menu {
     list-style: none;
     display: flex;
+    flex-direction: row;
     align-items: center;
     margin-right: 20px; /* Add some margin to the right of the menu items */
   }
@@ -30,6 +36,7 @@
   .na-menu li {
     margin-right: 20px; /* Add some margin between menu items */
     font-size: 16px; /* You can adjust the font size as needed */
+
   }
   
   /* Styles for the icons */
@@ -37,9 +44,19 @@
     margin-right: 5px; 
     /* color: #ff0000;  */
   }
-
-.na-menu i{
+.nav-menu{
+  text-decoration: none;
+  font-size: 1rem;
+  color: black;
+}
+.nav-menu i{
     padding-right: 10px;
+  }
+  .menu-icon{
+    display: none;
+  }
+  .nav-menu:hover{
+    color: rgb(164, 151, 136);
   }
 
 button{
@@ -57,5 +74,80 @@ button:hover{
   background-color: rgb(169, 153, 135);
   color: black;
 }
-  
-  
+ 
+  @media screen and (max-width:850px) {
+    .NavbarItems{
+      z-index: 95;
+    }
+    .navbar-logo{
+      width:20px;
+    }
+    .na-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      background-color: rgb(235, 232, 228);
+      color: black;
+      
+      width: 100%;
+      height: auto;
+      position: absolute;
+      top: 0;
+      left: -100%;
+      opacity: 0;
+      align-items: stretch;
+      padding: 150px 0 30px 0;
+      margin: 0px; 
+      z-index: -1;
+      transition: 0.3s ease-in-out;
+      border-radius: 12px;
+    }
+    .na-menu.active{
+      left: 0;
+      opacity: 1;
+      z-index: -1;
+    }
+    .nav-menu{
+      display: block;
+      text-decoration: none;
+      width: 100%;
+      font-size: 1.2rem;
+      padding: 2rem 0;
+    }
+    .nav-menu:hover{
+      color: rgb(116, 86, 31);
+      transition: 0.7s ease-in-out;
+      transform: scale(0.85);
+    }
+    button{
+      display: block;
+      background-color:  rgb(235, 232, 228);
+      padding: 20px;
+    }
+
+    .menu-icon{
+      display: none;
+    }
+    .nav-menu-mobile{
+      display: block;
+      text-align: center;
+      padding:1.5rem;
+      margin: auto;
+      border-radius: 4px;
+      background-color: rgb(183, 139, 85);
+      color: black;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+    .menu-icon{
+      display: block;
+      cursor: pointer;
+    }
+    .menu-icon i{
+      font-size: 1.1rem;
+      color: black;
+    }
+  } 
+
