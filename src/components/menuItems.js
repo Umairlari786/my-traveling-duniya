@@ -3,25 +3,25 @@ export const MenuItems =[
     {
         title: "Home",
         url:"/",
-        cName:"na-menu",
+        cName:"nav-menu",
         icon: "fa-solid fa-house"
     },
     {
         title: "About",
         url:"/about",
-        cName:"na-menu",
-        icon: "fa-solid fa-ban"
+        cName:"nav-menu",
+        icon: "fa-solid fa-info"
     },
     {
         title: "Service",
         url:"/service",
-        cName:"na-menu",
+        cName:"nav-menu",
         icon: "fa-solid fa-briefcase"
     },
     {
         title: "Contact",
         url:"/contact",
-        cName:"na-menu",
+        cName:"nav-menu",
         icon: "fa-solid fa-address-book"
     }
 ]
