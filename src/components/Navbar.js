@@ -3,6 +3,7 @@ import "./navbar.css";
 import { MenuItems } from "./menuItems";
 //import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 //import { faHome , faBan ,faBriefcase , faAddressBook , faUserPlus} from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 class Navbar extends React.Component {
   state = {clicked:false};
@@ -25,10 +26,10 @@ class Navbar extends React.Component {
             { MenuItems.map((item,index)=>{
                 return(
                     <li key={index}>
-                        <a className={item.cName} href={item.url}>
+                        <Link className={item.cName} href={item.url}>
                         <i  className={item.icon} />
                         {item.title}
-                        </a>
+                        </Link>
                     </li>
                 )
             })}
